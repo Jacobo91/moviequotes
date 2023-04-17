@@ -12,7 +12,8 @@ export const theme = {
 export const MySideBar = styled.aside`
     display: grid;
     overflow-y: scroll;
-    height: 70vh;
+    height: 80vh;
+    box-shadow: 5px 0 10px grey;
     @media (min-width: 600px){
         flex: 2;
         grid-template-columns: repeat(1, 1fr);
@@ -26,6 +27,9 @@ export const CardWrapper = styled.article`
     width: 300px;
     border-radius: 10px;
     box-shadow: 2px 3px 10px grey;
+    display: grid;
+    place-items: center;
+    padding-bottom: 10px;
 `;
 
 export const AuthorWrapper = styled.h3`

@@ -5,6 +5,7 @@ import { SideBar } from '../components/SideBar';
 import { useSelector } from 'react-redux';
 import { Routes, Route } from 'react-router-dom';
 import { Main } from '../components/Main';
+import { Info } from '../components/Info';
 
 function App() {
 
@@ -23,7 +24,7 @@ function App() {
       >
         <SideBar/>
         <Routes>
-          <Route path='/' element={<Main/>}/>
+          <Route path='/' element={<Info/>}/>
           <Route path='/quotes/:category' element={<Main/>}/>
         </Routes>
       </section>
