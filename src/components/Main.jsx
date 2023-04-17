@@ -16,7 +16,7 @@ export function Main(){
     const quotes = useSelector(state => state.quotes);
     const loading = quotes.isLoading;
     const {category} = useParams();
-    const URL = `https://quotes-by-api-ninjas.p.rapidapi.com/v1/quotes?category=${category}`;
+    const URL = category ?`https://quotes-by-api-ninjas.p.rapidapi.com/v1/quotes?category=${category}` : 'https://quotes-by-api-ninjas.p.rapidapi.com/v1/quotes?category=food' ;
 
     const dispatch = useDispatch();
 
