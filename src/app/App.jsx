@@ -23,6 +23,7 @@ function App() {
       >
         <SideBar/>
         <Routes>
+          <Route path='/' element={<Main/>}/>
           <Route path='/quotes/:category' element={<Main/>}/>
         </Routes>
       </section>
